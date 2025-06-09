@@ -1,12 +1,12 @@
 # CLI Calculator
 
-A command-line calculator in Python that supports basic arithmetic operations.
+A simple command-line calculator built in Python.
 
 ## Features
-
-- REPL interface
-- Addition, subtraction, multiplication, division
+- Supports addition, subtraction, multiplication, and division
+- REPL-style interaction
 - Input validation and error handling
+- 100% test coverage enforced by GitHub Actions
 
 ## Setup
 

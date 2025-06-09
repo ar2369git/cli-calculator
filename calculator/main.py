@@ -7,7 +7,7 @@ def get_number(prompt):
         except ValueError:
             print("Invalid number. Please try again.")
 
-def main():
+def run_calculator():
     print("Welcome to the CLI Calculator!")
     while True:
         print("\nOptions: add, subtract, multiply, divide, quit")
@@ -27,8 +27,10 @@ def main():
         try:
             result = getattr(operations, operation)(x, y)
             print(f"Result: {result}")
+        except ValueError:
+            print("Please enter valid numbers.")
         except Exception as e:
             print(f"Error: {e}")
 
-if __name__ == "__main__":
-    main()
+if __name__ == "__main__":  # pragma: no cover
+    run_calculator()
